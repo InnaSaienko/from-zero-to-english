@@ -2,7 +2,7 @@
   "name": "from-zero-to-english",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "public/index.html",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
