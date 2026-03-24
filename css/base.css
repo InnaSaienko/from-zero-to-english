@@ -32,10 +32,9 @@
     --link-font: 400 12px/1.33 'Manrope', sans-serif;
 
     /* Headers */
-    --h1-font: 700 60px/1.17 'Manrope', sans-serif;
-    --h2-font: 700 40px/1.2 'Manrope', sans-serif;
-    --h3-font: 700 32px/1.38 'Manrope', sans-serif;
-    --h4-font: 700 28px/1.14 'Manrope', sans-serif;
+    --h1-font: 700 38px/1.05 'Manrope', sans-serif;
+    --h3-font: 700 32px/1.13 'Manrope', sans-serif;
+    --h4-font: 700 20px/1.2 'Manrope', sans-serif;
 
     --indent-x-32: 32px;
     --indent-y-20: 20px;
@@ -63,11 +62,66 @@
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+body {
+    font: var(--body-font);
+    color: var(--cl-black-rgb);
 }
+
+h1, h2 {
+    font: var(--h1-font);
+    color: var(--white);
+    text-align: center;
+
+      & span {
+          color: var(--mint);
+      }    
+}
+
+h3 {
+    font: var(--h3-font);
+    letter-spacing: var(--ls-s);
+    color: var(--cl-black-rgb);
+    text-align: center;
+}
+
+h4 {
+    font: var(--h4-font);
+    letter-spacing: var(--ls-s);
+    color: var(--cl-black-rgb);
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    h1, h2 {
+        font-size: 60px;
+        line-height: 117%;
+    }
+    h3 {
+        font-size: 40px;
+        line-height: 120%;
+    }
+}
+
+.container {
+    min-width: 320px;
+    max-width: 335px;
+    margin: 0 auto;
+
+    padding: 0 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 704px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
 
 .brand-logo {
     display: inline-block;
@@ -89,7 +143,6 @@ img {
     background-color: var(--green);
     color: var(--white);
     font: var(--btn-font);
-    cursor: pointer;
     transition: background-color var(--transition), color var(--transition);
 
     &:hover, &:focus {
