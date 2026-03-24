@@ -18,10 +18,18 @@
 <!--<load src="./header.html"></load>-->
 <main>
 <!--    <load src="./hero.html"></load>-->
-<!--    <load src="./about-us.html"></load>-->
+    <div data-include="./partials/application-form.html"></div>
     Project
 
 </main>
 <!--<load src="../footer.html"></load>-->
+<script type="module">
+    const includes = document.querySelectorAll('[data-include]');
+    includes.forEach(async el => {
+        const file = el.getAttribute('data-include');
+        const res = await fetch(file);
+        el.innerHTML = await res.text();
+    });
+</script>
 </body>
 </html>
