@@ -83,7 +83,7 @@ img {
 
 .button {
     display: block;
-    padding: 14px 78px;
+    padding: 16px 63px;
     border: none;
     border-radius: 12px;
     background-color: var(--green);
