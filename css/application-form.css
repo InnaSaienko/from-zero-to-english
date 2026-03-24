@@ -1,8 +1,9 @@
 .application {
     & .container {
-        & .application-header {
+        & .title-head {
             & .rectangle:after {
                 width: 172px;
+                right: 40px;
             }
         }
     }
@@ -13,13 +14,9 @@
 
 @media only screen and (min-width: 768px) {
     .container {
-        & .application-header {
+        & .section-header {
             & .rectangle:after {
                 width: 172px;
-            }
-
-            & p {
-                font: var(--medium-font);
             }
         }
     }
