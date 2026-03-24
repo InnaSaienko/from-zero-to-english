@@ -39,9 +39,14 @@
     --indent-x-32: 32px;
     --indent-y-20: 20px;
     --indent-y-40: 40px;
+
     --items-2: 2;
     --items-3: 3;
     --items-4: 4;
+
+    --rect-top: 26px;
+    --rect-right: 99px;
+    --rect-width: 39px;
     /* ===== COLORS ===== */
 
     --black: 18, 20, 23 ;   /* #121417 */
@@ -141,8 +146,8 @@ h4 {
     border: none;
     border-radius: 12px;
     background-color: var(--green);
-    color: var(--white);
     font: var(--btn-font);
+    color: var(--white);
     transition: background-color var(--transition), color var(--transition);
 
     &:hover, &:focus {
@@ -153,5 +158,27 @@ h4 {
     &:active {
         background-color: var(--white);
         color: var(--green);
+    }
+}
+
+.rectangle {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: var(--rect-top);
+        right: var(--rect-right);
+        width: var(--rect-width);
+        height: 12px;
+        border-radius: 8px;
+        background: var(--mint);
+        z-index: -1;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .rectangle::after {
+        height: 20px;
     }
 }
