@@ -2,11 +2,9 @@
   "name": "from-zero-to-hero",
   "version": "1.0.0",
   "description": "",
-  "main": "partials/index.html",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base/from-zero-to-hero",
-    "lint": "eslint .",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "private": true,
