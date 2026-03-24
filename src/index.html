@@ -15,21 +15,13 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<!--<load src="./header.html"></load>-->
+<load src="./partials/header.html" />
 <main>
-<!--    <load src="./hero.html"></load>-->
-    <div data-include="./partials/application-form.html"></div>
+    <load src="./partials/hero.html"/>
+    <load src="./partials/about-us.html"/>
     Project
 
 </main>
-<!--<load src="../footer.html"></load>-->
-<script type="module">
-    const includes = document.querySelectorAll('[data-include]');
-    includes.forEach(async el => {
-        const file = el.getAttribute('data-include');
-        const res = await fetch(file);
-        el.innerHTML = await res.text();
-    });
-</script>
+<load src="./partials/footer.html" />
 </body>
 </html>
