@@ -113,8 +113,8 @@ h4 {
         color: var(--cl-black-rgba--80);
         text-align: center;
     }
-}
 
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -181,7 +181,7 @@ h4 {
     border-radius: 12px;
     background-color: var(--green);
     font: var(--btn-font);
-    color: rgb(var(--white));
+    color: var(--cl-white);
     transition: background-color var(--transition), color var(--transition);
 
     &:hover,
