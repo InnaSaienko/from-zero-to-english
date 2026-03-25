@@ -44,7 +44,16 @@
                         border: 1px solid var(--gray);
                         border-radius: 12px;
 
-                        &:user-invalid {
+                        &:focus {
+                            outline: none;
+                            border-color: var(--mint);
+                        }
+
+                        &:valid:not(:placeholder-shown) {
+                            border-color: var(--green);
+                        }
+
+                        &:invalid:not(:placeholder-shown) {
                             border-color: orangered;
                         }
                         &::placeholder {
@@ -143,5 +152,17 @@
 
 
 @media only screen and (min-width: 1280px) {
+    .application {
+        & .container {
+            & .title-head {
+                /*& .section-title {*/
+                /*    margin-bottom: 16px;*/
+                /*}*/
 
+                & .rectangle:after {
+                    --rect-right: 298px;
+                }
+            }
+        }
+    }
 }
