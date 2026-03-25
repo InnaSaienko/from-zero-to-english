@@ -9,7 +9,7 @@
             <form class="inputs-form">
                 <div class="input-item">
                     <label class="label-title" for="user-name"></label>
-                    <input class="input" type="text" id="user-name" name="user-name" pattern="^[\w]+\s[\w]+"
+                    <input class="input" type="text" id="user-name" name="user-name" pattern="^[A-Za-z]+(\s[A-Za-z]+)?$"
                          placeholder="Name"  required>
                 </div>
                 <div class="input-item">
@@ -33,7 +33,7 @@
                     <label class="radio">
                         <input type="radio" name="teacher" value="maria" class="visually-hidden" />
                         <svg class="radio-icon" width="24" height="24">
-                            <use href="./assets/icons.svg#icon-radio-button"></use>
+                            <use href="./assets/icons.svg#icon-arrow"></use>
                         </svg>
                         Maria
                     </label>
