@@ -1,8 +1,4 @@
 :root {
-  /* Others */
-  --anim-fast: 200ms ease-in;
-  --anim-slow: 500ms ease-out;
-
   /* Fonts */
   --header-menu-font: 600 14px/1.29 'Manrope', sans-serif;
 }
@@ -45,7 +41,7 @@
   border: 1px solid var(--border-cl);
   border-radius: 10px;
 
-  transition: var(--anim-fast);
+  transition: var(--transition);
   transition-property: color, border-color;
 }
 .socials-link:hover,
@@ -128,18 +124,21 @@
 
 .header-menu-link {
   display: block;
+  position: relative;
   padding: 13px 0;
   font: var(--header-menu-font);
-  transition: color var(--anim-fast);
+  transition: color var(--transition);
 }
-.header-menu-link.current {
-  position: relative;
+/* .header-menu-link:hover,
+.header-menu-link:focus {
   color: var(--cl-bg-accent);
-}
-.header-menu-link.current::after {
+} */
+.header-menu-link:hover::after,
+.header-menu-link:focus::after {
   content: '';
   position: absolute;
-  bottom: 5;
+  bottom: 5px;
+  left: 0;
   display: block;
   width: 37px;
   height: 2px;
@@ -156,7 +155,7 @@
   border: none;
   background-color: transparent;
   color: var(--black);
-  transition: var(--anim-fast);
+  transition: var(--transition);
   transition-property: transform, color;
 }
 @media not (hover: hover) {
