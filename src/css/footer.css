@@ -1,5 +1,5 @@
 .footer {
-    font: var(--small-font);
+    font: var(--menu-font);
     background-color: rgb(var(--black));
     color: rgba(var(--white));
     padding-bottom: 20px;
@@ -28,7 +28,7 @@
     gap: 16px;
 }
 .footer-address-text {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(var(--white), 0.6);
     margin-bottom: 4px;
 }
 .footer-container-nav{
@@ -41,7 +41,7 @@
     gap: 12px;
 }
 .footer-container-svg {
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(var(--white), 0.1);
     border-radius: 10px;
     padding: 8px;
     width: 44px;
@@ -51,7 +51,7 @@
     fill: #fff;
 }
 .footer-privacy-policy{
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(var(--white), 0.1);
     padding-top: 20px;
 }
 .footer-privacy-policy-box {
@@ -59,7 +59,7 @@
     gap: 18px;
 }
 .footer-privacy-policy-text {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(var(--white), 0.6);
     display: block;
     margin-bottom: 14px;
 }
