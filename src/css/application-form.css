@@ -218,7 +218,7 @@
                         color: rgba(var(--white), 0.7);
                         width: 452px;
                         text-align: center;
-                        & .statistics-title {
+                        & .statistics-value {
                             font-size: 40px;
                             color: var(--cl-white);
                             margin-bottom: 8px;
@@ -231,8 +231,6 @@
                 }
                 & .inputs-form {
 
-                }
-                & .inputs-form {
                 }
                 & .inputs-radio-accept {
                     & .accept-title {
