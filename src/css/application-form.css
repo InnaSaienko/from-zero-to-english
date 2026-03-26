@@ -98,17 +98,11 @@
                             cursor: pointer;
                             font: var(--small-font);
 
-                            input:checked + .radio-icon {
-                                border: none;
-                                color: var(--green);
-                            }
-
                             & .radio-icon {
                                 width: 24px;
                                 height: 24px;
                                 border-radius: 50%;
-                                border: 2px solid #636366;
-                                color: transparent;
+                                color: rgba(var(--black), 0.2);
                                 fill: transparent;
                                 display: flex;
                                 align-items: center;
@@ -116,6 +110,13 @@
                                 flex-shrink: 0;
                                 transition: color var(--transition);
                             }
+
+                            input:checked + .radio-icon {
+                                --outer-color: var(--green);
+                                --inner-color: var(--green);
+                            }
+
+
                         }
                     }
 
