@@ -27,15 +27,26 @@
                         <label class="label-title" for="user-name"></label>
                         <input class="input" type="text" id="user-name" name="user-name"
                                pattern="^[A-Za-z]+(\s[A-Za-z]+)?$"
-                               placeholder="Name" required>
+                               placeholder="Name"
+                               minlength="4"
+                               autocomplete="username"
+                               required>
                     </div>
                     <div class="input-item">
                         <label class="label-title" for="email"></label>
-                        <input class="input" type="email" id="email" name="email" placeholder="Email" required>
+                        <input class="input" type="email" id="email" name="email"
+                               pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/"
+                               autocomplete="email"
+                               placeholder="Email"
+                               required>
                     </div>
                     <div class="input-item">
                         <label class="label-title" for="phone"></label>
-                        <input class="input" type="tel" id="phone" name="phone" placeholder="Phone">
+                        <input class="input" type="tel"
+                               id="phone"
+                               name="phone"
+                               placeholder="Phone"
+                               autocomplete="phone">
                     </div>
                     <div class="input-item">
                         <label class="label-title visually-hidden" for="user-comment"></label>
