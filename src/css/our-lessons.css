@@ -18,10 +18,10 @@
 
 .lessons-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: var(--indent-x-32);
-  flex-wrap: wrap;
   margin: 0 auto;
   list-style: none;
   padding: 0;
@@ -132,6 +132,8 @@
   }
 
   .lessons-list {
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
 
