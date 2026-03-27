@@ -7,7 +7,6 @@
             background: var(--background-gradient);
             border-radius: 16px;
             padding: 40px 0;
-            /*overflow: hidden;*/
 
             & .benefits-head {
                 margin: 0 auto;
@@ -23,8 +22,6 @@
                     }
                 }
             }
-
-
             & .benefits-field {
                 width: 110vw;
                 position: relative;
@@ -41,7 +38,6 @@
                     padding: 40px 19px;
                     padding-right: 21px;
                     margin: 0 auto;
-
 
                     & .card-title {
                         font: var(--medium-bold-font);
@@ -84,7 +80,6 @@
                         & .button-master {
                             padding: 14px 57px;
                         }
-
                     }
 
                     &::before, &::after {
@@ -106,11 +101,11 @@
                         transform: rotate(-11deg);
                     }
 
-                    & .benefits-image {
-                        display: none;
-                    }
                     & .button-master {
                         padding: 14px 56px;
+                    }
+                    & .benefits-image {
+                        display: none;
                     }
                 }
             }
@@ -124,15 +119,19 @@
             & .wrapper {
                 overflow: visible;
                 position: relative;
-
-                & .benefits-title {
-                    font-size: 60px;
-                    line-height: 1.17;
+                & .benefits-head {
+                    padding: 64px 32px;
                     max-width: 640px;
-                    /*margin-bottom: 676px*/
+                    & .benefits-title {
+                        font-size: 60px;
+                        line-height: 1.17;
+                    }
+
                 }
 
+
                 & .benefits-field {
+                    padding: 52px 0;
                     & .benefits-card {
                         padding: 64px 31px;
                         width: 668px;
@@ -163,8 +162,8 @@
                             }
                         }
 
-                        &::after {
-                            /*overflow: visible;*/
+                        &::before, &::after {
+                            height: 499px;
                         }
 
                         & .button-master {
