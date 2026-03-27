@@ -59,11 +59,14 @@
                                 gap: 8px;
 
                                 & .check-icon {
-                                    width: 28px;
-                                    height: 28px;
-                                    display: flex;
+                                    width: 20px;
+                                    height: 20px;
+                                    display: block;
                                     flex-shrink: 0;
-                                    color: var(--white);
+                                    box-sizing: border-box;
+                                    padding: 6px 5px;
+                                    border-radius: 50%;
+                                    background-color: var(--green);
                                 }
 
                                 & .item-text {
