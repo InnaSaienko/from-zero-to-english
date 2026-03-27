@@ -15,7 +15,7 @@
 /* #region Logo */
 .logo {
   font: var(--medium-bold-font);
-  color: var(--black);
+  color: rgb(var(--black));
 }
 .header-logo {
   padding: 20px 0;
@@ -44,7 +44,7 @@
 }
 .burger-icon {
   display: block;
-  fill: var(--black);
+  fill: rgb(var(--black));
 }
 /* #endregion */
 
@@ -93,7 +93,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  color: var(--black);
+  color: rgb(var(--black));
   transition: var(--transition);
   transition-property: transform, color;
 }
