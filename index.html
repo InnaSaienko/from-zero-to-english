@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/from-zero-to-hero/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/from-zero-to-hero/assets/index-DWpQGgJz.css">
+    <link rel="stylesheet" crossorigin href="/from-zero-to-hero/assets/index-QWhkky2Q.css">
   </head>
   <body>
     <header class="header">
@@ -488,7 +488,7 @@
                         </label>
                     </div>
                 </div>
-                <button class="button button-form" type="button">Send</button>
+                <button class="button button-form" type="button" data-send-open>Send</button>
                 <p class="message-form">By clicking on “Send” button, you agree to our <span
                         class="message-form_policy">Privacy Policy</span>, and allow Promodo to use this information for
                     marketing purposes.</p>
@@ -496,6 +496,7 @@
         </div>
     </div>
 </section>
+
     </main>
     <footer id="footer" class="footer">
   <div class="container">
@@ -561,5 +562,25 @@
   </div>
   
 </footer>
+    <div class="send-modal-backdrop" data-send-modal hidden>
+  <div
+    class="send-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-live="polite"
+    aria-label="Sending message"
+  >
+    <p class="send-modal-text" data-send-status>Sending...</p>
+    <p class="send-modal-hint" data-send-hint></p>
+    <div class="send-modal-track">
+      <span
+        class="send-modal-envelope"
+        data-send-envelope
+        aria-hidden="true"
+      ></span>
+    </div>
+  </div>
+</div>
+
   </body>
 </html>
