@@ -31,7 +31,7 @@
                             width: 100%;
                             padding: 16px;
                             padding-left: 18px;
-                            border: 1px solid rgba(var(--black), 0.2);
+                            border: 1px solid var(--black-20);
                             border-radius: 12px;
 
                             &:focus {
@@ -39,13 +39,10 @@
                                 border-color: var(--mint);
                             }
 
-                            &:user-valid:not(:placeholder-shown) {
+                            &:valid:not(:placeholder-shown) {
                                 border-color: var(--green);
                             }
 
-                            /*&:user-invalid:not(:placeholder-shown) {*/
-                            /*    border-color: orangered;*/
-                            /*}*/
                             &:invalid:not(:focus):not(:placeholder-shown) {
                                 border-color: orangered;
                             }
@@ -88,7 +85,7 @@
                                 width: 24px;
                                 height: 24px;
                                 border-radius: 50%;
-                                color: rgba(var(--black), 0.2);
+                                color: var(--black-20);
                                 fill: transparent;
                                 display: flex;
                                 align-items: center;
@@ -211,7 +208,7 @@
                     & .statistics-head {
                         position: relative;
                         padding: 0 20px 40px;
-                        color: rgba(var(--white), 0.7);
+                        color: var(--white-70);
                         width: 452px;
                         text-align: center;
 
