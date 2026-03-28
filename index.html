@@ -468,7 +468,7 @@
                     <div class="input-item">
                         <label class="label-title" for="email"></label>
                         <input class="input" type="email" id="email" name="email"
-                               pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                               pattern="^[A-Za-z0-9](?:[A-Za-z0-9._%+-]{0,62}[A-Za-z0-9])?@[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)+$"
                                autocomplete="email"
                                placeholder="Email"
                                required>
