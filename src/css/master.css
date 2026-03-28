@@ -169,11 +169,8 @@
             & .button-master {
               max-width: 306px;
               padding-inline: 64px;
-
-              & .button-text {
-                font-size: 18px;
-                line-height: 156%;
-              }
+              font-size: 18px;
+              line-height: 156%;
             }
 
             & .benefits-image {
