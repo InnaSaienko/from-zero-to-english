@@ -21,7 +21,7 @@
         }
       }
       & .benefits-field {
-        width: 110vw;
+        overflow: hidden;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -128,6 +128,7 @@
         }
 
         & .benefits-field {
+          overflow: visible;
           padding: 52px 0;
           & .benefits-card {
             padding: 64px 31px;
