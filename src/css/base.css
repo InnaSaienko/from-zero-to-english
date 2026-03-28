@@ -52,18 +52,28 @@
   --rect-width: 39px;
 
   /* ===== COLORS ===== */
-  --black: 18, 20, 23; /* #121417 */
-  --cl-black-rgb: rgb(var(--black));
-  --cl-black-rgba--50: rgba(var(--black), 0.5);
-  --cl-black-rgba--80: rgba(var(--black), 0.8);
+  --black: rgb(18, 20, 23); /* #121417 */
+  --black-10: rgba(18, 20, 23, 0.1);
+  --black-20: rgba(18, 20, 23, 0.2);
+  --black-40: rgba(18, 20, 23, 0.4);
+  --black-50: rgba(18, 20, 23, 0.5);
+  --black-80: rgba(18, 20, 23, 0.8);
+  --cl-black-rgb: var(--black);
+  --cl-black-rgba--50: var(--black-50);
+  --cl-black-rgba--80: var(--black-80);
   --green: #4dc274;
-  --green-rgb: 77, 194, 116; /* #4dc274 */
+  --green-10: rgba(77, 194, 116, 0.1);
+  --green-35: rgb(77, 194, 116, 0.35);
   --mint: #bee8cc;
   --light-green: #d4fde1;
   --gray: #f3f5f6;
-  --white: 255, 255, 255; /* #ffffff */
-  --cl-white: rgb(var(--white));
-  --cl-white-rgba--40: rgba(var(--white), 0.4);
+  --white: rgb(255, 255, 255); /* #ffffff */
+  --white-10: rgba(255, 255, 255, 0.1);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --white-60: rgba(255, 255, 255, 0.6);
+  --white-70: rgba(255, 255, 255, 0.7);
+  --cl-white: var(--white);
+  --cl-white-rgba--40: var(--white-40);
 
   /* ===== STATES ===== */
 
@@ -106,7 +116,7 @@ body {
 h1,
 h2 {
   font: var(--h1-font);
-  color: rgb(var(--white));
+  color: var(--white);
   text-align: center;
 }
 

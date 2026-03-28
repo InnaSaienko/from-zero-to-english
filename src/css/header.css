@@ -144,7 +144,7 @@ body.menu-open {
   position: fixed;
   inset: 0;
   z-index: 999;
-  background-color: rgba(var(--black), 0.4);
+  background-color: var(--black-40);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -190,7 +190,7 @@ body.menu-open {
   padding: 0;
   border: none;
   background-color: transparent;
-  color: rgb(var(--white));
+  color: var(--white);
   display: grid;
   place-items: center;
 }
@@ -232,7 +232,7 @@ body.menu-open {
 
 .mobile-menu-list {
   font: var(--menu-font);
-  color: rgb(var(--white));
+  color: var(--white);
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
@@ -242,7 +242,7 @@ body.menu-open {
 }
 
 .mobile-menu-link {
-  color: rgb(var(--white));
+  color: var(--white);
   font: var(--menu-font);
 }
 
