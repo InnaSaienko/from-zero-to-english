@@ -71,7 +71,6 @@
                         display: flex;
                         flex-direction: column;
                         gap: 12px;
-                        margin-bottom: 40px;
 
                         & .radio {
                             display: flex;
@@ -155,7 +154,6 @@
                         & .radio-group {
                             flex-direction: row;
                             gap: 16px;
-                            margin-bottom: 32px;
 
                             & .radio {
                                 font-size: 18px;
@@ -166,7 +164,6 @@
                     & .button-form {
                         font-size: 18px;
                         line-height: 1.56;
-                        margin-bottom: 16px;
                     }
                     & .message-form {
                         font-size: 14px;
