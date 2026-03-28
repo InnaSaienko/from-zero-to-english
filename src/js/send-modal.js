@@ -99,6 +99,8 @@ if (
       autoCloseDelay: 1700,
     });
 
+    applyForm.reset();
+
     statusTimer = window.setTimeout(() => {
       sendStatus.textContent = 'Message sent!';
       statusTimer = null;
