@@ -95,6 +95,7 @@
 /* Card button */
 
 .lessons-card__btn {
+  padding: 16px 0;
   margin-top: auto;
 }
 
